@@ -1,0 +1,95 @@
+/* reset mínimo */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* container do login */
+.container {
+    background-color: lightcoral;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* título */
+.container h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* inputs */
+input[type="text"],
+input[type="password"] {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+/* botão */
+button {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* alerta de erro */
+.alert {
+    padding: 10px 12px;
+    border-radius: 8px;
+    background-color: #ff4c4c;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* responsivo */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+}
